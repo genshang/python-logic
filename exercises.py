@@ -68,6 +68,16 @@ login_result = check_login("DevLeague")
 #if malware is adware: 'Low Threat'
 #if malware is virus: 'Do not share files'
 #default message 'I hope you backed up your data'
+def malware_type(malware):
+    if malware == "adware":
+        print("Low Threat")
+    elif malware == "virus":
+        print("Do not share files")
+    else:
+        print("I hope you backed up your data")
+
+malware_result = malware_type("virus")
+
 
 #7 Function encryption
 #Create a function named encryption which takes a parameter keys.
