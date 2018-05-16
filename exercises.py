@@ -7,14 +7,32 @@
 # Please commit and push your code after each completed exercise.
 
 #1. Declare a variable named weather and assign it a string value of 'rain'. Next create a conditional statement that will check the weather and print 'Bring an umbrella' if weather equals 'rain'.
+weather = "rain"
+if weather == "rain":
+    print("Bring an umbrella")
+else:
+    print("Suns out guns out!")
 
 #2 Declare a variable named score and assign it a number value of 70. Next create a conditional statement that will check the score and print 'You pass!' if the score is 70 and above and print 'Study harder!' if the score is less than 70.
+score = 70
+if score >= 70:
+    print("You Pass!")
+elif score < 70:
+    print("Study Harder!")
 
 #3. Declare a variable named download_speed and assign it a data value of 50. Next create a conditional statement that will check the download speed and print the following based on the condition:
+download_speed = 50
 
 # <= 50: 'Basic Package'
 # <=100: 'Premium Package'
 # >100: 'Platinum Package'
+if download_speed <= 50:
+    print("Basic Package")
+elif download_speed <= 100:
+    print("Premium Package")
+elif download_speed > 100:
+    print("Platinum Package")
+    
 
  #4 Function - check_password
  #Create a function named check_password which takes a parameter password.
