@@ -113,6 +113,19 @@ cryptography = even_cryptography(102)
 #if sum <= 100: 'Moderate User'
 #if sum <=150: 'Multi Media User'
 #if sum >150: 'Power User'
+# mbps = [1, 2, 3, 4, 88]
+# def bandwidth(usage):
+#     return(sum(usage))
+#     if usage <= 50:
+#         print("Light User")
+#     elif usage <= 100:
+#         print("Moderate User")
+#     elif usage <= 150: 
+#         print("Multi Media User")
+#     elif usage > 150:
+#         print("Power User")
+
+# how_much = bandwidth(mbps)
 
 #10 Function ssh_keys
 #Create a function named ssh_keys which takes two parameters public and private.
@@ -120,6 +133,14 @@ cryptography = even_cryptography(102)
 #The function will return false if public and private aren't equal and return true if they are equal.
 
 #Declare a variable named ssh_connection and print your result.
+def ssh_keys(public, private):
+    if public == private:
+        return True
+    elif public != private:
+        return False
+
+ssh_connection = ssh_keys("public", "private")
+print(ssh_connection)
 
 #11 Function largest_num
 #Create a function named largest_num which takes three parameters: num_1, num_2 and num_3.
