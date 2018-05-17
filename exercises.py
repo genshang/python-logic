@@ -113,19 +113,18 @@ cryptography = even_cryptography(102)
 #if sum <= 100: 'Moderate User'
 #if sum <=150: 'Multi Media User'
 #if sum >150: 'Power User'
-# mbps = [1, 2, 3, 4, 88]
-# def bandwidth(usage):
-#     return(sum(usage))
-#     if usage <= 50:
-#         print("Light User")
-#     elif usage <= 100:
-#         print("Moderate User")
-#     elif usage <= 150: 
-#         print("Multi Media User")
-#     elif usage > 150:
-#         print("Power User")
+mbps = [1, 2, 3, 4, 88]
+def bandwidth(usage):
+    if sum(usage) <= 50:
+        print("Light User")
+    elif sum(usage) <= 100:
+        print("Moderate User")
+    elif sum(usage) <= 150: 
+        print("Multi Media User")
+    elif sum(usage) > 150:
+        print("Power User")
 
-# how_much = bandwidth(mbps)
+how_much = bandwidth(mbps)
 
 #10 Function ssh_keys
 #Create a function named ssh_keys which takes two parameters public and private.
