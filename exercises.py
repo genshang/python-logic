@@ -156,6 +156,15 @@ print(large_num_result)
 #Create a function named pos_neg which takes a parameter num.
 
 #The function will print 'Positive Number' if the number passed in is positive, print 'Zero' if the number is 0 and print 'Negative Number' for a negative number.
+def pos_neg(num):
+    if num == 0:
+        print("Zero")
+    elif num % 2 == 0:
+        print("Positive Number")
+    else:
+        print("Negative Number")
+
+numresult = pos_neg(0)
 
 #13 Function name_caps
 #Create a function named name_caps which takes a parameter name.
@@ -167,6 +176,16 @@ print(large_num_result)
 #if characters in name >10: leave the letters as is
 
 #Print your results
+def name_caps(name):
+    if len(name) <= 5:
+        print(name.capitalize())
+    elif len(name) <= 10:
+        print(name.upper())
+    elif len(name) >10:
+        print(name)
+
+my_name = name_caps("shangounchained")
+
 
 #14 Function leap_year
 
@@ -174,5 +193,11 @@ print(large_num_result)
 
 #Create a function named leap_year which takes a parameter year.
 #The function will print 'The year x is a leap year.' where x is the year value that is passed into the function and print 'The year x is not a leap year.' if it isn't a leap year.
-
+def leap_year(year):
+    if year % 4 == 0 and year % 100 != 0 or year % 400 == 0:
+        print("The year " + str(year) + " is a leap year")
+    else:
+        print("The year " + str(year) + " is not a leap year")
+    
+leap = leap_year(2004)
 
